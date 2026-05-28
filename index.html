@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cat</title>
+  <script data-goatcounter="https://steffenhuck.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #8a9e82;
+      --text: #1e2a1a;
+      --muted: #3a4e34;
+      --accent: #1e2a1a;
+      --max-width: 680px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Caveat', cursive;
+      font-size: 26px;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 52px 28px 72px;
+    }
+
+    /* --- TITLE BLOCK --- */
+    h1 {
+      font-family: 'Caveat', cursive;
+      font-size: clamp(4rem, 8vw, 6.5rem);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin: 0 0 6px 0;
+      line-height: 1.1;
+      text-align: center;
+    }
+
+    .subtitle {
+      font-family: 'Caveat', cursive;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      margin: 0 0 2rem 0;
+      text-align: center;
+    }
+
+    .cast-block {
+      padding: 0.8rem 0;
+      margin-bottom: 2.8rem;
+      text-align: center;
+    }
+
+    .cast-label {
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .cast-names {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    /* --- IMAGE --- */
+    .visual {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 3rem auto;
+      border-radius: 4px;
+    }
+
+    /* --- PLAY TEXT --- */
+    .stage {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--muted);
+      font-size: 1em;
+      margin: 0 0 1.2rem;
+    }
+
+    .speech {
+      margin: 1.4rem 0;
+    }
+
+    .speaker {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.15rem;
+    }
+
+    .line {
+      font-size: 1em;
+      font-weight: 400;
+      color: var(--text);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .inline-stage {
+      display: block;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--muted);
+      font-size: 1em;
+      margin: 0.1rem 0 0.2rem;
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      margin-top: 5rem;
+      padding-top: 1.4rem;
+    }
+
+    footer a {
+      font-family: 'Caveat', cursive;
+      font-size: 1rem;
+      letter-spacing: 0.22em;
+      text-transform: lowercase;
+      color: var(--muted);
+      text-decoration: none;
+      opacity: 0.85;
+      transition: opacity 0.2s;
+    }
+
+    footer a:hover { opacity: 1; }
+
+    @media (max-width: 600px) {
+      body { font-size: 23px; }
+      .container { padding: 32px 18px 56px; }
+      h1 { font-size: 3.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>The Cat</h1>
+    <p class="subtitle">A Play</p>
+
+    <div class="cast-block">
+      <div class="cast-label">Cast</div>
+      <div class="cast-names">The First Student &nbsp;·&nbsp; The New Student &nbsp;·&nbsp; The Young Student</div>
+    </div>
+
+    <img class="visual" src="hands.png" alt="Two hands holding">
+
+    <p class="stage">(By the grove behind the institute's paddock. The Young Student is digging a little hole in the ground. A hunter's knife lies next to the hole. As does something furry.)</p>
+
+    <p class="stage">(The First and the New Student approach. They are holding hands. On spotting the Young Student their hands part.)</p>
+
+    <div class="speech">
+      <div class="speaker">The First Student</div>
+      <p class="line">What are you doing here? So late in the evening?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <span class="inline-stage">(picking up the knife and holding it up)</span>
+      <p class="line">I honour my brother's memory.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The New Student</div>
+      <p class="line">He was a good soul.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">You don't have to pretend with me. He was useless.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The First Student</div>
+      <p class="line">That is a little harsh.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">I wanted to feel how it feels.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The New Student</div>
+      <p class="line">How what feels?</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">To cut a throat.</p>
+    </div>
+
+    <p class="stage">(The Young Student grabs the furry object and holds it up. It is a cat with a cut throat.)</p>
+
+    <div class="speech">
+      <div class="speaker">The First Student</div>
+      <p class="line">Oh no, that's Mimi.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">Me me.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The First Student</div>
+      <p class="line">Mimi.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The New Student</div>
+      <p class="line">She is our house cat.</p>
+    </div>
+
+    <div class="speech">
+      <div class="speaker">The Young Student</div>
+      <p class="line">Mimi. Fine. But past tense please.</p>
+    </div>
+
+    <footer>
+      <a href="https://steffenhuck.github.io/">steffen huck</a>
+    </footer>
+
+  </div>
+</body>
+</html>
